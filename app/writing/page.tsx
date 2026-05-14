@@ -727,12 +727,12 @@ export default function WritingPage() {
             </h2>
           </div>
 
-          <div className="space-y-10">
+          <div className="columns-1 md:columns-2 gap-8 space-y-0">
 
             {poems.map((poem, i) => (
               <div
                 key={i}
-                className="max-w-2xl border-l border-white/20 pl-6"
+                className="break-inside-avoid mb-10 border-l border-white/20 pl-6"
               >
                 <h3 className="text-lg text-white/80 mb-4">
                   {poem.title}

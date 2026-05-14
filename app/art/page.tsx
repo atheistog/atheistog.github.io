@@ -4,12 +4,12 @@ import Link from "next/link";
 import PageTransition from "@/components/PageTransition";
 
 const artworks = [
-  { id: 1, title: "Sketch 01", image: "/img 1.jpg" },
-  { id: 2, title: "Concept 02", image: "/img 2.jpg" },
-  { id: 3, title: "Comic Frame", image: "/img 3.jpg" },
-  { id: 4, title: "Character Study", image: "/img 4.jpg" },
-  { id: 5, title: "Digital Art", image: "/img 5.jpg" },
-  { id: 6, title: "Storyboard", image: "/img 6.jpeg" },
+  { id: 1, title: "Comic Strip", image: "/img 1.jpg" },
+  { id: 2, title: "Digital Artwork", image: "/img 2.jpg" },
+  { id: 3, title: "Concept Art", image: "/img 3.jpg" },
+  { id: 4, title: "Character Sketch", image: "/img 4.jpg" },
+  { id: 5, title: "Pencil Portrait", image: "/img 5.jpg" },
+  { id: 6, title: "Caricature", image: "/img 6.jpeg" },
 ];
 
 export default function ArtPage() {
@@ -57,7 +57,7 @@ export default function ArtPage() {
             </div>
 
             {/* TITLE */}
-            <p className="text-sm mt-3 text-center font-medium tracking-wide">
+            <p className="text-sm mt-3 text-center font-medium tracking-wide text-black/80">
               {art.title}
             </p>
           </div>
