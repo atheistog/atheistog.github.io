@@ -1,4 +1,5 @@
 "use client";
+
 import { useRouter } from "next/navigation";
 import PageTransition from "@/components/PageTransition";
 
@@ -7,10 +8,10 @@ export default function About() {
 
   return (
     <div className="min-h-screen bg-[#e8e4d9] text-black p-6 flex justify-center">
-
+      
       <div className="max-w-3xl w-full bg-white shadow-2xl p-8 border border-gray-300 relative">
 
-        {/* LOGO (return Button) */}
+        {/* LOGO (Return Button) */}
         <img
           src="/Omega.png"
           alt="LOGO"
@@ -23,12 +24,13 @@ export default function About() {
           <h1 className="text-xl font-bold tracking-wide">
             CONFIDENTIAL CASE FILE
           </h1>
+
           <span className="text-red-600 font-bold rotate-[-10deg] border border-red-600 px-2">
             CLASSIFIED
           </span>
         </div>
 
-        {/* Top Section (Image + Basic Info) */}
+        {/* Top Section */}
         <div className="flex gap-6 items-start">
 
           {/* Profile Image */}
@@ -41,9 +43,14 @@ export default function About() {
           </div>
 
           {/* Info */}
-          <div>
-            <p><strong>Subject:</strong> Omkar Gopale</p>
-            <p><strong>Alias:</strong> OG | Veritas Quaestor</p>
+          <div className="space-y-2">
+            <p>
+              <strong>Subject:</strong> Omkar Gopale
+            </p>
+
+            <p>
+              <strong>Alias:</strong> OG | Veritas Quaestor
+            </p>
           </div>
 
         </div>
@@ -51,12 +58,14 @@ export default function About() {
         {/* Divider */}
         <div className="my-6 border-t" />
 
-        {/* Profile */}
+        {/* Profile Summary */}
         <h2 className="font-bold text-lg">Profile Summary</h2>
+
         <p className="mt-2 text-sm leading-relaxed">
           Interdisciplinary Architect with a foundation in cybersecurity,
-          combined with creative expertise in visual arts, storytelling, and film production.
-          Focused on understanding systems and human behavior.
+          combined with creative expertise in visual arts, storytelling,
+          and film production. Focused on understanding systems and
+          human behavior.
         </p>
 
         {/* Divider */}
@@ -64,6 +73,7 @@ export default function About() {
 
         {/* Domains */}
         <h2 className="font-bold text-lg">Domains of Expertise</h2>
+
         <ul className="list-disc ml-5 mt-2 text-sm space-y-1">
           <li>Cybersecurity & Digital Systems</li>
           <li>Visual Arts (Paintings, Comics, Digital)</li>
@@ -78,10 +88,47 @@ export default function About() {
 
         {/* Background */}
         <h2 className="font-bold text-lg">Background</h2>
+
         <p className="mt-2 text-sm leading-relaxed">
-          With formal education in cybersecurity and hands-on experience in film production,
-          the subject demonstrates a unique ability to connect analytical systems with creative storytelling.
+          With formal education in cybersecurity and hands-on experience
+          in film production, the subject demonstrates a unique ability
+          to connect analytical systems with creative storytelling.
         </p>
+
+        {/* Divider */}
+        <div className="my-6 border-t" />
+
+        {/* Resume Section */}
+        <div className="flex flex-col items-center justify-center text-center gap-4">
+
+          <h2 className="font-bold text-lg">
+            Resume File
+          </h2>
+
+          <div className="flex gap-4">
+
+            {/* View Resume */}
+            <a
+              href="/Omkar Gopale Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-800 text-white px-5 py-2 rounded-md shadow-md hover:bg-black transition hover:scale-105"
+            >
+              View Resume
+            </a>
+
+            {/* Download Resume */}
+            <a
+              href="/Omkar Gopale Resume.pdf"
+              download
+              className="bg-black text-white px-5 py-2 rounded-md shadow-md hover:bg-gray-700 transition hover:scale-105"
+            >
+              Download Resume
+            </a>
+
+          </div>
+
+        </div>
 
       </div>
     </div>
